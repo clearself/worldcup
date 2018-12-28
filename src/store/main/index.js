@@ -19,7 +19,7 @@ export default {
 							'你说得对，今年世界杯会产生一个新的冠军'
 						],
 						'imgUrl': 'http://img1.gtimg.com/sports/pics/hv1/24/195/2279/148241724.jpg',
-						'circleImg': '/static/circleImg/0.png',
+						'circleImg': 'https://clearself.github.io/cup/static/circleImg/0.png',
 					},
 					{
 						'id': 2,
@@ -36,7 +36,7 @@ export default {
 							'我们将誓死捍卫亚洲足球的荣耀'
 						],
 						'imgUrl': 'http://img1.gtimg.com/sports/pics/hv1/40/195/2279/148241740.jpg',
-						'circleImg': '/static/circleImg/1.png',
+						'circleImg': 'https://clearself.github.io/cup/static/circleImg/1.png',
 					},
 					{
 						'id': 3,
@@ -53,7 +53,7 @@ export default {
 							'你真是勇气可嘉，我还以为没有人会选我呢'
 						],
 						'imgUrl': 'http://img1.gtimg.com/sports/pics/hv1/15/195/2279/148241715.jpg',
-						'circleImg': '/static/circleImg/2.png',
+						'circleImg': 'https://clearself.github.io/cup/static/circleImg/2.png',
 					},
 					{
 						'id': 4,
@@ -70,7 +70,7 @@ export default {
 							'最老的世界杯，最新的世界杯，都属于乌拉圭！'
 						],
 						'imgUrl': 'http://img1.gtimg.com/sports/pics/hv1/42/195/2279/148241742.jpg',
-						'circleImg': '/static/circleImg/3.png',
+						'circleImg': 'https://clearself.github.io/cup/static/circleImg/3.png',
 					}
 				]
 			},
@@ -90,7 +90,7 @@ export default {
 							'届时，C罗和梅西谁更强你就清楚了'
 						],
 						'imgUrl': 'http://img1.gtimg.com/sports/pics/hv1/34/195/2279/148241734.jpg',
-						'circleImg': '/static/circleImg/4.png',
+						'circleImg': 'https://clearself.github.io/cup/static/circleImg/4.png',
 					},
 					{
 						'id': 6,
@@ -109,7 +109,7 @@ export default {
 							'对于伟大的斗牛士来说，仅仅一个世界杯冠军确实太少了'
 						],
 						'imgUrl': 'http://img1.gtimg.com/sports/pics/hv1/43/195/2279/148241743.jpg',
-						'circleImg': '/static/circleImg/5.png',
+						'circleImg': 'https://clearself.github.io/cup/static/circleImg/5.png',
 					},
 					{
 						'id': 7,
@@ -128,7 +128,7 @@ export default {
 							'你说得对，今年世界杯会产生一个新的冠军'
 						],
 						'imgUrl': 'http://img1.gtimg.com/sports/pics/hv1/31/195/2279/148241731.jpg',
-						'circleImg': '/static/circleImg/6.png',
+						'circleImg': 'https://clearself.github.io/cup/static/circleImg/6.png',
 					},
 					{
 						'id': 8,
@@ -146,7 +146,7 @@ export default {
 							'我们将誓死捍卫亚洲足球的荣耀！'
 						],
 						'imgUrl': 'http://img1.gtimg.com/sports/pics/hv1/44/195/2279/148241744.jpg',
-						'circleImg': '/static/circleImg/7.png',
+						'circleImg': 'https://clearself.github.io/cup/static/circleImg/7.png',
 					}
 				]
 			},
@@ -166,7 +166,7 @@ export default {
 							'你一定知道我们是32个队中最贵的也是最好的那个队'
 						],
 						'imgUrl': 'http://img1.gtimg.com/sports/pics/hv1/25/195/2279/148241725.jpg',
-						'circleImg': '/static/circleImg/8.png',
+						'circleImg': 'https://clearself.github.io/cup/static/circleImg/8.png',
 					},
 					{
 						'id': 10,
@@ -184,7 +184,7 @@ export default {
 							'踢球嘛，重要的是要有梦想'
 						],
 						'imgUrl': 'http://img1.gtimg.com/sports/pics/hv1/16/195/2279/148241716.jpg',
-						'circleImg': '/static/circleImg/9.png',
+						'circleImg': 'https://clearself.github.io/cup/static/circleImg/9.png',
 					},
 					{
 						'id': 11,
@@ -200,7 +200,7 @@ export default {
 							'踢球嘛，重要的是要有梦想'
 						],
 						'imgUrl': 'http://img1.gtimg.com/sports/pics/hv1/30/195/2279/148241730.jpg',
-						'circleImg': '/static/circleImg/10.png',
+						'circleImg': 'https://clearself.github.io/cup/static/circleImg/10.png',
 					},
 					{
 						'id': 12,
@@ -214,7 +214,7 @@ export default {
 							'你说得对，今年世界杯会产生一个新的冠军'
 						],
 						'imgUrl': 'http://img1.gtimg.com/sports/pics/hv1/22/195/2279/148241722.jpg',
-						'circleImg': '/static/circleImg/11.png',
+						'circleImg': 'https://clearself.github.io/cup/static/circleImg/11.png',
 					}
 				]
 			},
@@ -237,7 +237,7 @@ export default {
 							'你们的梅球王正式登基！'
 						],
 						'imgUrl': 'http://img1.gtimg.com/sports/pics/hv1/14/195/2279/148241714.jpg',
-						'circleImg': '/static/circleImg/12.png',
+						'circleImg': 'https://clearself.github.io/cup/static/circleImg/12.png',
 					},
 					{
 						'id': 14,
@@ -251,7 +251,7 @@ export default {
 							'你说得对，今年世界杯会产生一个新的冠军'
 						],
 						'imgUrl': 'http://img1.gtimg.com/sports/pics/hv1/20/195/2279/148241720.jpg',
-						'circleImg': '/static/circleImg/13.png',
+						'circleImg': 'https://clearself.github.io/cup/static/circleImg/13.png',
 					},
 					{
 						'id': 15,
@@ -266,7 +266,7 @@ export default {
 							'你说得对，今年世界杯会产生一个新的冠军'
 						],
 						'imgUrl': 'http://img1.gtimg.com/sports/pics/hv1/29/195/2279/148241729.jpg',
-						'circleImg': '/static/circleImg/14.png',
+						'circleImg': 'https://clearself.github.io/cup/static/circleImg/14.png',
 					},
 					{
 						'id': 16,
@@ -279,7 +279,7 @@ export default {
 							'终于亮出你30年绿鹰球迷的身份了吗？'
 						],
 						'imgUrl': 'http://img1.gtimg.com/sports/pics/hv1/33/195/2279/148241733.jpg',
-						'circleImg': '/static/circleImg/15.png',
+						'circleImg': 'https://clearself.github.io/cup/static/circleImg/15.png',
 					}
 				]
 			},
@@ -299,7 +299,7 @@ export default {
 							'第六颗星星该怎么放啊？球衣太小了放不下真是烦恼啊！'
 						],
 						'imgUrl': 'http://img1.gtimg.com/sports/pics/hv1/18/195/2279/148241718.jpg',
-						'circleImg': '/static/circleImg/16.png',
+						'circleImg': 'https://clearself.github.io/cup/static/circleImg/16.png',
 					},
 					{
 						'id': 18,
@@ -314,7 +314,7 @@ export default {
 							'你说得对，今年世界杯会产生一个新的冠军'
 						],
 						'imgUrl': 'http://img1.gtimg.com/sports/pics/hv1/37/195/2279/148241737.png',
-						'circleImg': '/static/circleImg/17.png',
+						'circleImg': 'https://clearself.github.io/cup/static/circleImg/17.png',
 					},
 					{
 						'id': 19,
@@ -327,7 +327,7 @@ export default {
 							'说出一个本队球星的名字再说你是我们的球迷，门将不算啊！'
 						],
 						'imgUrl': 'http://img1.gtimg.com/sports/pics/hv1/27/195/2279/148241727.jpg',
-						'circleImg': '/static/circleImg/18.png',
+						'circleImg': 'https://clearself.github.io/cup/static/circleImg/18.png',
 					},
 					{
 						'id': 20,
@@ -341,7 +341,7 @@ export default {
 							'永远别相信夺冠热门，因为你不知道谁是下一匹黑马'
 						],
 						'imgUrl': 'http://img1.gtimg.com/sports/pics/hv1/38/195/2279/148241738.jpg',
-						'circleImg': '/static/circleImg/19.png',
+						'circleImg': 'https://clearself.github.io/cup/static/circleImg/19.png',
 					}
 				]
 			},
@@ -362,7 +362,7 @@ export default {
 							'抱歉了各位，大力神杯我再保管4年！'
 						],
 						'imgUrl': 'http://img1.gtimg.com/sports/pics/hv1/23/195/2279/148241723.jpg',
-						'circleImg': '/static/circleImg/20.png',
+						'circleImg': 'https://clearself.github.io/cup/static/circleImg/20.png',
 					},
 					{
 						'id': 22,
@@ -376,7 +376,7 @@ export default {
 							'有眼光，大家都知道我们是被低估的实力派'
 						],
 						'imgUrl': 'http://img1.gtimg.com/sports/pics/hv1/32/195/2279/148241732.jpg',
-						'circleImg': '/static/circleImg/21.png',
+						'circleImg': 'https://clearself.github.io/cup/static/circleImg/21.png',
 					},
 					{
 						'id': 23,
@@ -394,7 +394,7 @@ export default {
 							'你说得对，今年世界杯会产生一个新的冠军'
 						],
 						'imgUrl': 'http://img1.gtimg.com/sports/pics/hv1/36/195/2279/148241736.jpg',
-						'circleImg': '/static/circleImg/22.png',
+						'circleImg': 'https://clearself.github.io/cup/static/circleImg/22.png',
 					},
 					{
 						'id': 24,
@@ -412,7 +412,7 @@ export default {
 							'我们将誓死捍卫亚洲足球的荣耀！'
 						],
 						'imgUrl': 'http://img1.gtimg.com/sports/pics/hv1/28/195/2279/148241728.jpg',
-						'circleImg': '/static/circleImg/23.png',
+						'circleImg': 'https://clearself.github.io/cup/static/circleImg/23.png',
 					}
 				]
 			},
@@ -431,7 +431,7 @@ export default {
 							'你说得对，今年世界杯会产生一个新的冠军'
 						],
 						'imgUrl': 'http://img1.gtimg.com/sports/pics/hv1/19/195/2279/148241719.jpg',
-						'circleImg': '/static/circleImg/24.png',
+						'circleImg': 'https://clearself.github.io/cup/static/circleImg/24.png',
 					},
 					{
 						'id': 26,
@@ -444,7 +444,7 @@ export default {
 							'皮这一下你很开心吗？'
 						],
 						'imgUrl': 'http://img1.gtimg.com/sports/pics/hv1/17/195/2279/148241717.jpg',
-						'circleImg': '/static/circleImg/25.png',
+						'circleImg': 'https://clearself.github.io/cup/static/circleImg/25.png',
 					},
 					{
 						'id': 27,
@@ -462,7 +462,7 @@ export default {
 							'你真是勇气可嘉，我还以为没有人会选我呢。'
 						],
 						'imgUrl': 'http://img1.gtimg.com/sports/pics/hv1/41/195/2279/148241741.jpg',
-						'circleImg': '/static/circleImg/26.png',
+						'circleImg': 'https://clearself.github.io/cup/static/circleImg/26.png',
 					},
 					{
 						'id': 28,
@@ -478,7 +478,7 @@ export default {
 							'不是夺冠热门？三狮军团顽强捧杯教你学做人'
 						],
 						'imgUrl': 'http://img1.gtimg.com/sports/pics/hv1/46/195/2279/148241746.jpg',
-						'circleImg': '/static/circleImg/27.png',
+						'circleImg': 'https://clearself.github.io/cup/static/circleImg/27.png',
 					}
 				]
 
@@ -500,7 +500,7 @@ export default {
 							'你说得对，今年世界杯会产生一个新的冠军'
 						],
 						'imgUrl': 'http://img1.gtimg.com/sports/pics/hv1/21/195/2279/148241721.jpg',
-						'circleImg': '/static/circleImg/28.png',
+						'circleImg': 'https://clearself.github.io/cup/static/circleImg/28.png',
 					},
 					{
 						'id': 30,
@@ -514,7 +514,7 @@ export default {
 							'你说得对，今年世界杯会产生一个新的冠军'
 						],
 						'imgUrl': 'http://img1.gtimg.com/sports/pics/hv1/39/195/2279/148241739.jpg',
-						'circleImg': '/static/circleImg/29.png',
+						'circleImg': 'https://clearself.github.io/cup/static/circleImg/29.png',
 					},
 					{
 						'id': 31,
@@ -528,7 +528,7 @@ export default {
 							'你一定是足球小将大空翼的粉丝！'
 						],
 						'imgUrl': 'http://img1.gtimg.com/sports/pics/hv1/35/195/2279/148241735.jpg',
-						'circleImg': '/static/circleImg/30.png',
+						'circleImg': 'https://clearself.github.io/cup/static/circleImg/30.png',
 					},
 					{
 						'id': 32,
@@ -544,7 +544,7 @@ export default {
 							'你是预测界的一股清流!'
 						],
 						'imgUrl': 'http://img1.gtimg.com/sports/pics/hv1/26/195/2279/148241726.jpg',
-						'circleImg': '/static/circleImg/31.png',
+						'circleImg': 'https://clearself.github.io/cup/static/circleImg/31.png',
 					}
 				]
 			}

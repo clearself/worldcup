@@ -204,7 +204,7 @@ function getTime(time, sp, istrue) {
 			return c;
 		}
 	}
-
+	
 	function two(n){
 		return n<10?'0'+n:''+n;
 	}

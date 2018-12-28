@@ -296,14 +296,12 @@
 			<img class="cup" src="../img/cup.png" alt="" />
 			
 			<!--二维码-->
-			<!--<div class="ub ub-ver ewm">
+			<div class="ub ub-ver ewm">
 				<div>
-					<img :src="imageurl" alt="" />
+					<img src="../img/ewm.png" alt="" />
 				</div>
-				<div class="ub ub-pc line2">长按预测2018世界杯冠军</div>
-			</div>-->
-			
-			
+				<div class="ub ub-pc line2" style="margin-top: 10px;">长按预测{{timestr}}世界杯冠军</div>
+			</div>
 		</div>
 		
 	</div>
@@ -325,16 +323,18 @@
 	export default {
 		data(){
 			return {
-				imageurl:'http://img1.gtimg.com/sports/pics/hv1/158/222/2279/148248743.png',
+				timestr:'',
 				tipMessage:'',
 				request:true,
 				request1:false,
 				myMessage:'',
+				bg_url:'../img/bg.jpg',
 				user:{
 					"nick": "",
 					"icon": "",
 					"supportsNum": ""
 				},
+				imgs:[],
 				dataOne:datas.dataOne,
 				dataTwo:datas.dataTwo,
 				dataThree:datas.dataThree,
@@ -343,7 +343,9 @@
 			}
 		},
 		created(){
+			this.timestr = new Date().getFullYear();
 			/*冠军*/
+			this.imgs = [];
 		 	this.firstData = app.getsessionStorage('firstData');
 		 	console.log(this.firstData)
 		 	this.firstData[0].selectGroup.numberOne = true;
@@ -393,6 +395,12 @@
 		 		}
 		 		return item;
 		 	});
+
+			this.get_data(dataOnePre);
+			this._get_data(dataTwoPre);
+			this._get_data(dataThreePre);
+			this._get_data(dataFourPre);
+			
 		},
 		 mounted() {
 		 	var that = this;
@@ -418,87 +426,47 @@
 			  width:width, //dom 原始宽度
 			  height:height //dom 原始高度,
 			};
-			 setTimeout(function(){
-				html2canvas(content_html,opts).then(function (canvas) {
-				  var dataUrl = canvas.toDataURL();
-				  var img = document.createElement("img");
-					img.src = dataUrl;
-				  	img.style.width = width+'px';
-				  	img.style.height = height+'px';
-					document.getElementById('imageBox').appendChild(img);
-			  });
-			},1000)
-//			app.getAction('worldCup2018/myWorldCup',{
-//				teamId:1
-//			},function(res){
-//				if(res.code ==0){
-//					that.user.nick = res.data.nick;
-//					that.user.supportsNum = res.data.supportsNum;
-//					var headImg = new Image();
-//					   headImg.src = res.data.icon;
-//					   headImg.onerror = () => { // 图片加载错误时
-//						   that.request = false;
-//						   that.request1 = true;
-//						   that.myMessage = '我';
-//						   setTimeout(function(){
-//								html2canvas(content_html,opts).then(function (canvas) {
-//								  var dataUrl = canvas.toDataURL();
-//								  var img = document.createElement("img");
-//									img.src = dataUrl;
-//								  	img.style.width = width+'px';
-//								  	img.style.height = height+'px';
-//									document.getElementById('imageBox').appendChild(img);
-//							  });
-//							},1000)
-//						}
-//					   headImg.onload = () => { // 图片加载成功后把地址给原来的img
-//					    that.user.icon = headImg.src
-//					    setTimeout(function(){
-//							html2canvas(content_html,opts).then(function (canvas) {
-//							  var dataUrl = canvas.toDataURL();
-//							  var img = document.createElement("img");
-//								img.src = dataUrl;
-//							  	img.style.width = width+'px';
-//							  	img.style.height = height+'px';
-//								document.getElementById('imageBox').appendChild(img);
-//						  });
-//						},1000)
-//					   }
-//						
-//				}else{
-//					that.request = false;
-//					that.request1 = true;
-//					that.myMessage = '我';
-//				setTimeout(function(){
-//						html2canvas(content_html,opts).then(function (canvas) {
-//						  var dataUrl = canvas.toDataURL();
-//						  var img = document.createElement("img");
-//							img.src = dataUrl;
-//						  	img.style.width = width+'px';
-//						  	img.style.height = height+'px';
-//							document.getElementById('imageBox').appendChild(img);
-//					  });
-//					},1000)
-//				}
-//			},function(error){
-//				that.request = false;
-//				that.request1 = true;
-//				that.myMessage = '我';
-//				setTimeout(function(){
-//						html2canvas(content_html,opts).then(function (canvas) {
-//						  var dataUrl = canvas.toDataURL();
-//						  var img = document.createElement("img");
-//							img.src = dataUrl;
-//						  	img.style.width = width+'px';
-//						  	img.style.height = height+'px';
-//							document.getElementById('imageBox').appendChild(img);
-//					  });
-//					},1000)
-//			})
 			
-	   },
+			 let promiseAll = [], img = [], imgTotal = this.imgs.length;
+			 for(let i = 0 ; i < imgTotal; i++){
+			     promiseAll[i] = new Promise((resolve, reject)=>{
+			         img[i] = new Image();
+			         img[i].src = this.imgs[i];
+			         img[i].onload = function(){
+			              //第i张加载完成
+			              resolve(img[i]);
+			         }
+			     })
+			 }
+			 Promise.all(promiseAll).then((img)=>{
+			     //全部加载完成
+			     setTimeout(function() {
+					html2canvas(content_html, opts).then(function(canvas) {
+						var dataUrl = canvas.toDataURL();
+						var img = document.createElement("img");
+						img.src = dataUrl;
+						img.style.width = width + 'px';
+						img.style.height = height + 'px';
+						document.getElementById('imageBox').appendChild(img);
+					});
+				}, 1000)
+			 })
+		},
 	   methods:{
-	   	
+	   		get_data(arr){
+	   			for(let index = 0;index<arr.length;index++){
+			 		let source = arr[index].selectGroup;
+			 		for(let i = 0;i<source.length;i++){
+				 		this.imgs.push(source[i].circleImg);
+				 	}
+			 	}
+	   		},
+	   		_get_data(arr){
+	   			for(let index = 0;index<arr.length;index++){
+			 		let source = arr[index].selectGroup;
+			 		this.imgs.push(source.circleImg);
+			 	}
+	   		}
 	   }
 	}
 </script>
