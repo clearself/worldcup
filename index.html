@@ -11,7 +11,31 @@
 		<script type="text/javascript" src="https://cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
    <script type="text/javascript" src="./static/html2canvas.js"></script>
   <title></title>
- 
+ <script type="text/javascript">
+			function dynamicLoadCss(url) {
+		        var head = document.getElementsByTagName('head')[0];
+		        var link = document.createElement('link');
+		        link.type='text/css';
+		        link.rel = 'stylesheet';
+		        link.href = url;
+		        head.appendChild(link);
+		    }
+
+			function get_deviceInfo(){
+				  var device = navigator.userAgent;
+				  if (device.match('Android')) {
+				    return 'android';
+				  } else if (device.match('iPhone')) {
+				    return 'iphone';
+				  } else {
+				    return 'pc';
+				  }
+				}
+			///处理安卓1像素边框问题 单独处理
+			if(get_deviceInfo() === 'android'){
+				dynamicLoadCss('/static/css/fly.css')
+			}
+		</script>
   </head>
   <body>
     <div id="app"></div>

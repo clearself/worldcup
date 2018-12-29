@@ -15,9 +15,9 @@
 		  					<div class="group_icon"></div>
 		  				</div>
 		  				<div class="ub ub-ver left">
-		  					<div v-for="(item, index) in dataA.teams" :key="index" class="ub ub-ac item-box" :class="{active:item.isSelected}" @click="selectGroupA(item,index)">
+		  					<div v-for="(item, index) in dataA.teams" :key="index" class="ub ub-ac item-box ui-border-round" :class="{active:item.isSelected}" @click="selectGroupA(item,index)">
 		  						<span></span>
-		  						<div><img class="pic" :src="item.imgUrl" alt="" /></div>
+		  						<div><img class="pic ui-border-round" :src="item.imgUrl" alt="" /></div>
 		  						<div class="ub ub-f1 ub-ac name">{{item.teamName}}</div>
 		  						<div class="circle" :class="{active:item.isSelected}">
 		  							<span :class="{active:item.isSelected}">{{item.message}}</span>
@@ -31,13 +31,13 @@
 		  					<div class="group_icon"></div>
 		  				</div>
 		  				<div class="ub ub-ver left">
-		  					<div v-for="(item, index) in dataB.teams" :key="index" class="ub ub-ac item-box" :class="{active:item.isSelected}" @click="selectGroupB(item,index)">
+		  					<div v-for="(item, index) in dataB.teams" :key="index" class="ub ub-ac item-box ui-border-round" :class="{active:item.isSelected}" @click="selectGroupB(item,index)">
 		  						<span></span>
 		  						<div class="circle right" :class="{active:item.isSelected}">
 		  							<span :class="{active:item.isSelected}">{{item.message}}</span>
 		  						</div>
 		  						<div class="ub ub-f1 ub-ac ub-pe name nameright">{{item.teamName}}</div>
-		  						<div><img class="pic" :src="item.imgUrl" alt="" /></div>
+		  						<div><img class="pic ui-border-round" :src="item.imgUrl" alt="" /></div>
 		  					</div>
 		  				</div>
 		  			</div>
@@ -49,9 +49,9 @@
 		  					<div class="group_icon"></div>
 		  				</div>
 		  				<div class="ub ub-ver left">
-		  					<div v-for="(item, index) in dataC.teams" :key="index" class="ub ub-ac item-box" :class="{active:item.isSelected}" @click="selectGroupC(item,index)">
+		  					<div v-for="(item, index) in dataC.teams" :key="index" class="ub ub-ac item-box ui-border-round" :class="{active:item.isSelected}" @click="selectGroupC(item,index)">
 		  						<span></span>
-		  						<div><img class="pic" :src="item.imgUrl" alt="" /></div>
+		  						<div><img class="pic ui-border-round" :src="item.imgUrl" alt="" /></div>
 		  						<div class="ub ub-f1 ub-ac name">{{item.teamName}}</div>
 		  						<div class="circle" :class="{active:item.isSelected}">
 		  							<span :class="{active:item.isSelected}">{{item.message}}</span>
@@ -65,13 +65,13 @@
 		  					<div class="group_icon"></div>
 		  				</div>
 		  				<div class="ub ub-ver left">
-		  					<div v-for="(item, index) in dataD.teams" :key="index" class="ub ub-ac item-box" :class="{active:item.isSelected}" @click="selectGroupD(item,index)">
+		  					<div v-for="(item, index) in dataD.teams" :key="index" class="ub ub-ac item-box ui-border-round" :class="{active:item.isSelected}" @click="selectGroupD(item,index)">
 		  						<span></span>
 		  						<div class="circle right" :class="{active:item.isSelected}">
 		  							<span :class="{active:item.isSelected}">{{item.message}}</span>
 		  						</div>
 		  						<div class="ub ub-f1 ub-ac ub-pe name nameright">{{item.teamName}}</div>
-		  						<div><img class="pic" :src="item.imgUrl" alt="" /></div>
+		  						<div><img class="pic ui-border-round" :src="item.imgUrl" alt="" /></div>
 		  					</div>
 		  				</div>
 		  			</div>
@@ -83,9 +83,9 @@
 		  					<div class="group_icon"></div>
 		  				</div>
 		  				<div class="ub ub-ver left">
-		  					<div v-for="(item, index) in dataE.teams" :key="index" class="ub ub-ac item-box" :class="{active:item.isSelected}" @click="selectGroupE(item,index)">
+		  					<div v-for="(item, index) in dataE.teams" :key="index" class="ub ub-ac item-box ui-border-round" :class="{active:item.isSelected}" @click="selectGroupE(item,index)">
 		  						<span></span>
-		  						<div><img class="pic" :src="item.imgUrl" alt="" /></div>
+		  						<div><img class="pic ui-border-round" :src="item.imgUrl" alt="" /></div>
 		  						<div class="ub ub-f1 ub-ac name">{{item.teamName}}</div>
 		  						<div class="circle" :class="{active:item.isSelected}">
 		  							<span :class="{active:item.isSelected}">{{item.message}}</span>
@@ -99,13 +99,13 @@
 		  					<div class="group_icon"></div>
 		  				</div>
 		  				<div class="ub ub-ver left">
-		  					<div v-for="(item, index) in dataF.teams" :key="index" class="ub ub-ac item-box" :class="{active:item.isSelected}" @click="selectGroupF(item,index)">
+		  					<div v-for="(item, index) in dataF.teams" :key="index" class="ub ub-ac item-box ui-border-round" :class="{active:item.isSelected}" @click="selectGroupF(item,index)">
 		  						<span></span>
 		  						<div class="circle right" :class="{active:item.isSelected}">
 		  							<span :class="{active:item.isSelected}">{{item.message}}</span>
 		  						</div>
 		  						<div class="ub ub-f1 ub-ac ub-pe name nameright">{{item.teamName}}</div>
-		  						<div><img class="pic" :src="item.imgUrl" alt="" /></div>
+		  						<div><img class="pic ui-border-round" :src="item.imgUrl" alt="" /></div>
 		  					</div>
 		  				</div>
 		  			</div>
@@ -117,9 +117,9 @@
 		  					<div class="group_icon"></div>
 		  				</div>
 		  				<div class="ub ub-ver left">
-		  					<div v-for="(item, index) in dataG.teams" :key="index" class="ub ub-ac item-box" :class="{active:item.isSelected}" @click="selectGroupG(item,index)">
+		  					<div v-for="(item, index) in dataG.teams" :key="index" class="ub ub-ac item-box ui-border-round" :class="{active:item.isSelected}" @click="selectGroupG(item,index)">
 		  						<span></span>
-		  						<div><img class="pic" :src="item.imgUrl" alt="" /></div>
+		  						<div><img class="pic ui-border-round" :src="item.imgUrl" alt="" /></div>
 		  						<div class="ub ub-f1 ub-ac name">{{item.teamName}}</div>
 		  						<div class="circle" :class="{active:item.isSelected}">
 		  							<span :class="{active:item.isSelected}">{{item.message}}</span>
@@ -133,13 +133,13 @@
 		  					<div class="group_icon"></div>
 		  				</div>
 		  				<div class="ub ub-ver left">
-		  					<div v-for="(item, index) in dataH.teams" :key="index" class="ub ub-ac item-box" :class="{active:item.isSelected}" @click="selectGroupH(item,index)">
+		  					<div v-for="(item, index) in dataH.teams" :key="index" class="ub ub-ac item-box ui-border-round" :class="{active:item.isSelected}" @click="selectGroupH(item,index)">
 		  						<span></span>
 		  						<div class="circle right" :class="{active:item.isSelected}">
 		  							<span :class="{active:item.isSelected}">{{item.message}}</span>
 		  						</div>
 		  						<div class="ub ub-f1 ub-ac ub-pe name nameright">{{item.teamName}}</div>
-		  						<div><img class="pic" :src="item.imgUrl" alt="" /></div>
+		  						<div><img class="pic ui-border-round" :src="item.imgUrl" alt="" /></div>
 		  					</div>
 		  				</div>
 		  			</div>
@@ -249,6 +249,24 @@
 
 <style scoped lang="scss">
 		@import '../scss/style.scss';
+		.ui-border-round:after {
+		    width: 200%;
+		    height: 200%;
+		    position: absolute;
+		    top: 0px;
+		    left: 0px;
+		    content: "";
+		    display: block;
+		    position: absolute;
+		    -webkit-transform: scale(0.5);
+		    -webkit-transform-origin: 0 0;
+		    -webkit-box-sizing: border-box;
+		    pointer-events: none;
+		    border: 2px solid $gray;
+		    /*px*/
+		    border-radius: $borderW;
+		    z-index: 1;
+		}
 		.top{
 	        position: fixed;
 	        width:100%;
@@ -282,7 +300,7 @@
 		display: block;
 		width:90px;
 		height:60px;
-		border:2px solid #fff;
+		/*border:2px solid #fff;*/
 		border-radius:$borderW;
 		box-sizing: border-box;
 	}
@@ -296,7 +314,7 @@
 	.item-box{
 		width:100%;
 		height:60px;
-		border:2px solid $gray;
+		/*border:2px solid $gray;*/
 		margin-bottom: 10px;
 		border-radius:$borderW;
 	}
@@ -312,6 +330,8 @@
 	.item-box.active{
 		color:#fff;
 		background-color: #32b16c;
+	}
+	.item-box.active:after{
 		border-color:rgba(0,0,0,0)
 	}
 	.item-box.active>span{
